@@ -7,19 +7,22 @@ export const TransactionList = () => {
     const {transactions} = useContext(GlobalContext);
     
     return (
-        <>
+        <div>
 
         <h3 className="heading">History</h3>
         <ul className="transaction-list">
             {transactions.map(transaction =>
-            (<Transaction key= {transaction.id} transaction={transaction} />
+            ( 
+            <Transaction key= {transaction.id} 
+            transaction={transaction} />
 
-            ))}
+            )
+            )}
 
             
     
         </ul>
 
-        </>
+        </div>
     )
 }
