@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.container{
+max-width: 400px;
+max-height: auto;
+margin: 0 auto;
+margin-top: 50px;
+background-color: #f7c98f;
+box-shadow: 0 0 10px gray;
+padding: 15px 50px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.text-align{
+
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.expense-container{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.transaction-form input{
+    margin:10px;
+    width: 100%;
+    padding: 4px;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.transaction-list {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+.transaction-list>li{
+display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    box-shadow: 0 0 10px gray;
+    margin: 5px 0;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading{
+
+    justify-content: space-between;
+    display: flex;
+}
+
+.styleAccount{
+
+    padding : 20px;
+    display : flex;
+    margin : 20px 0;
+    justify-content: space-around;
 }
